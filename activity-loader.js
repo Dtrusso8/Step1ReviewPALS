@@ -45,7 +45,7 @@ class ActivityLoader {
                                 // Expose top-level passwords toggle globally
                                 try {
                                     if (typeof window !== 'undefined') {
-                                        window.PASSWORDS_ENABLED = data.passwordsEnabled === true;
+                                        window.PASSWORDS_ENABLED = data.passwordsEnabled === false;
                                     }
                                 } catch (e) {
                                     console.warn('Could not set PASSWORDS_ENABLED on window.', e);
